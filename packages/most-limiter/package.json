@@ -1,6 +1,7 @@
 {
   "name": "most-limiter",
   "description": "Rate limiter for most js, delaying stream events according to a given rate.",
+  "version": "0.0.1",
   "main": "src/index.js",
   "author": {
     "name": "craft ai",
@@ -29,6 +30,5 @@
   },
   "peerDependencies": {
     "most": "^1.5.1"
-  },
-  "version": "0.0.1"
+  }
 }

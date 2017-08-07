@@ -1,5 +1,7 @@
 # `most-limiter` #
 
+[![Version](https://img.shields.io/npm/v/most-limiter.svg?style=flat-square)](https://npmjs.org/package/most-limiter)
+
 Rate limiter for [most](https://github.com/cujojs/most).
 
 ## Installation ##

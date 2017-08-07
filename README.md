@@ -6,11 +6,11 @@ A collection of utilities for [most](https://github.com/cujojs/most).
 
 ## Packages ##
 
-### [`most-buffer`](./packages/most-buffer) ###
+### [`most-buffer`](./packages/most-buffer) [![Version](https://img.shields.io/npm/v/most-buffer.svg?style=flat-square)](https://npmjs.org/package/most-buffer) ###
 
 A buffer, collecting stream events in buffer of a given size.
 
-### [`most-limiter`](./packages/most-limiter) ###
+### [`most-limiter`](./packages/most-limiter) [![Version](https://img.shields.io/npm/v/most-limiter.svg?style=flat-square)](https://npmjs.org/package/most-limiter) ###
 
 A rate limiter, delaying stream events according to a given rate.
 

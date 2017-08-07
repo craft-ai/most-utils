@@ -1,5 +1,7 @@
 # `most-buffer` #
 
+[![Version](https://img.shields.io/npm/v/most-buffer.svg?style=flat-square)](https://npmjs.org/package/most-buffer)
+
 Buffer for [most](https://github.com/cujojs/most).
 
 ## Installation ##
