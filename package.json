@@ -19,8 +19,7 @@
   "scripts": {
     "lerna": "lerna",
     "test": "lerna run test",
-    "lint": "lerna run lint",
-    "publish_packages": "lerna exec -- yarn publish ./"
+    "lint": "lerna run lint"
   },
   "engines": {
     "node": ">= 6.9.1"
