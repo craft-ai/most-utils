@@ -2,7 +2,9 @@
 
 [![Version](https://img.shields.io/npm/v/most-limiter.svg?style=flat-square)](https://npmjs.org/package/most-limiter)
 
-Rate limiter for [most](https://github.com/cujojs/most).
+Lossless rate limiter for [most](https://github.com/cujojs/most).
+
+Unlike [`most.debounce`](https://github.com/cujojs/most/blob/master/docs/api.md#debounce) or [`most.throttle`](https://github.com/cujojs/most/blob/master/docs/api.md#throttle), with `most-limiter`, each event gets through, unless the internal buffer overrides.
 
 ## Installation ##
 
@@ -27,8 +29,8 @@ const limiter = require('most-limiter');
 `stream.thru(limiter(interval [, capacity = 1000])) -> Stream`
 
 ```
-source:                  -a-b-cdef----->
-most.thru(limiter(100)): -a-b-c-d-e-f-->
+stream:                    -a-b---cdef----->
+stream.thru(limiter(100)): -a-b---c-d-e-f-->
 ```
 
 - `interval` is the minimum time interval between events, in ms.
