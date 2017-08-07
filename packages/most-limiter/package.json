@@ -29,5 +29,6 @@
   },
   "peerDependencies": {
     "most": "^1.5.1"
-  }
+  },
+  "version": "0.0.1"
 }
