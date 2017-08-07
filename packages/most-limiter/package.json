@@ -3,6 +3,7 @@
   "description": "Rate limiter for most js, delaying stream events according to a given rate.",
   "version": "0.0.3",
   "main": "src/index.js",
+  "typings": "src/most-limiter.d.ts",
   "author": {
     "name": "craft ai",
     "email": "contact@craft.ai",
@@ -22,11 +23,12 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "test": "mocha",
-    "lint": "eslint ."
+    "lint": "eslint . && tsc src/most-limiter.d.ts"
   },
   "devDependencies": {
     "eslint": "^4.4.0",
-    "mocha": "^3.5.0"
+    "mocha": "^3.5.0",
+    "typescript": "^2.4.2"
   },
   "peerDependencies": {
     "most": "^1.5.1"

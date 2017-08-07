@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased](https://github.com/craft-ai/most-utils/compare/v0.0.3...HEAD) ##
+### Added ###
+- Typescript definitions for all the packages
 
 ## [0.0.3](https://github.com/craft-ai/most-utils/compare/v0.0.2...v0.0.3) - 2017-08-07 ##
 ### Added ###

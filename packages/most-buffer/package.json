@@ -2,6 +2,7 @@
   "name": "most-buffer",
   "description": "Buffer for most js, collecting stream events in buffer of a given size.",
   "main": "src/index.js",
+  "typings": "src/most-buffer.d.ts",
   "version": "0.0.3",
   "author": {
     "name": "craft ai",
@@ -22,11 +23,12 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "test": "mocha",
-    "lint": "eslint ."
+    "lint": "eslint . && tsc src/most-buffer.d.ts"
   },
   "devDependencies": {
     "eslint": "^4.4.0",
-    "mocha": "^3.5.0"
+    "mocha": "^3.5.0",
+    "typescript": "^2.4.2"
   },
   "peerDependencies": {
     "most": "^1.5.1"
