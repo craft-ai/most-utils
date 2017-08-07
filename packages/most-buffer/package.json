@@ -2,7 +2,7 @@
   "name": "most-buffer",
   "description": "Buffer for most js, collecting stream events in buffer of a given size.",
   "main": "src/index.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "craft ai",
     "email": "contact@craft.ai",
