@@ -1,8 +1,11 @@
 {
   "name": "most-buffer",
   "description": "Buffer for most js, collecting stream events in buffer of a given size.",
-  "keywords": ["most.js", "buffer"],
-  "version": "0.0.3",
+  "keywords": [
+    "most.js",
+    "buffer"
+  ],
+  "version": "0.0.4",
   "main": "src/index.js",
   "typings": "src/most-buffer.d.ts",
   "author": {
