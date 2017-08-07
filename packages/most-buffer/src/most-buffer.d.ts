@@ -1,3 +1,3 @@
-import { Stream } from 'most'
+import { Stream } from 'most';
 
-declare function buffer<T>(count: number): (stream: Stream<T>) => Stream<T[]>;
+export default function buffer<T>(count: number): (stream: Stream<T>) => Stream<T[]>;
