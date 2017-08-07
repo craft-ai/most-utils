@@ -1,0 +1,33 @@
+{
+  "name": "most-buffer",
+  "description": "Buffer for most js, collecting stream events in buffer of a given size.",
+  "main": "src/index.js",
+  "author": {
+    "name": "craft ai",
+    "email": "contact@craft.ai",
+    "url": "http://craft.ai/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craft-ai/most-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/craft-ai/most-utils/issues"
+  },
+  "homepage": "https://github.com/craft-ai/most-utils#readme",
+  "engines": {
+    "node": ">= 6.9.1"
+  },
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^4.4.0",
+    "mocha": "^3.5.0"
+  },
+  "peerDependencies": {
+    "most": "^1.5.1"
+  }
+}

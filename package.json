@@ -1,0 +1,36 @@
+{
+  "name": "most-utils",
+  "description": "",
+  "private": true,
+  "author": {
+    "name": "craft ai",
+    "email": "contact@craft.ai",
+    "url": "http://craft.ai/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craft-ai/most-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/craft-ai/most-utils/issues"
+  },
+  "homepage": "https://github.com/craft-ai/most-utils#readme",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "lerna": "lerna",
+    "test": "npm run lerna -- run test",
+    "lint": "npm run lerna -- run lint"
+  },
+  "engines": {
+    "node": ">= 6.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "eslint-config-craft-ai": "^2.2.3",
+    "lerna": "^2.0.0",
+    "most": "^1.5.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
