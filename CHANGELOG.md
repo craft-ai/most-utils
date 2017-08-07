@@ -7,7 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased](https://github.com/craft-ai/most-utils/compare/v0.0.5...HEAD) ##
 ### Changed ###
-- Improvement to the pacakges documentation.
+- Improvement to the packages documentation.
+
+### Fixed ###
+- Module export support both `import` and `require()`.
 
 ## [0.0.5](https://github.com/craft-ai/most-utils/compare/v0.0.4...v0.0.5) - 2017-08-07 ##
 ### Fixed ###
