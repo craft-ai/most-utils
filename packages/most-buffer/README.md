@@ -7,13 +7,13 @@ Buffer for [most](https://github.com/cujojs/most).
 ## Installation ##
 
 ```console
-> yarn add most-buffer
+$ yarn add most-buffer
 ```
 
 _or_
 
 ```console
-> npm install --save most-buffer
+$ npm install --save most-buffer
 ```
 
 ```js

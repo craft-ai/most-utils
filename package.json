@@ -18,8 +18,9 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "lerna": "lerna",
-    "test": "npm run lerna -- run test",
-    "lint": "npm run lerna -- run lint"
+    "test": "lerna run test",
+    "lint": "lerna run lint",
+    "publish_packages": "lerna exec -- yarn publish ./"
   },
   "engines": {
     "node": ">= 6.9.1"

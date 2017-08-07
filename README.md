@@ -24,13 +24,44 @@ These packages requires [Node v6.9](https://nodejs.org/en/download/) or later an
 
 - Install dependencies:
   ```console
-  > yarn install
+  $ yarn install
   ```
 - Lint the code:
   ```console
-  > yarn run lint
+  $ yarn run lint
   ```
 - Run the tests:
   ```console
-  > yarn run test
+  $ yarn run test
   ```
+
+### Releasing a new version (needs administrator rights) ###
+
+1. Make sure the build of the master branch is [passing](https://travis-ci.org/craft-ai/most-utils).
+2. Checkout the master branch locally.
+
+  ```console
+  $ git fetch
+  $ git checkout master
+  $ git reset --hard origin/master
+  ```
+4. Increment the version of all packages and move _Unreleased_ section
+   of `CHANGELOG.md` to a newly created section for this version.
+
+  ```console
+  $ ./scripts/update_version.sh patch
+  ```
+
+  `./scripts/update_version.sh minor` and `./scripts/update_version.sh major` are
+  also available - see [semver](http://semver.org) for a guideline on when to
+  use which.
+
+  > This will create a git commit and a git tag.
+
+5. Push everything.
+
+  ```console
+  $ git push origin master --tags
+  ```
+
+  > This will trigger the publishing of this new version of the packages by [travis](https://travis-ci.org/craft-ai/most-utils).

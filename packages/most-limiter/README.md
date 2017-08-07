@@ -7,13 +7,13 @@ Rate limiter for [most](https://github.com/cujojs/most).
 ## Installation ##
 
 ```console
-> yarn add most-limiter
+$ yarn add most-limiter
 ```
 
 _or_
 
 ```console
-> npm install --save most-limiter
+$ npm install --save most-limiter
 ```
 
 and then
