@@ -14,6 +14,11 @@ A buffer, collecting stream events in buffer of a given size.
 
 A rate limiter, delaying stream events according to a given rate.
 
+
+### [`most-range`](./packages/most-range) [![Version](https://img.shields.io/npm/v/most-range.svg?style=flat-square)](https://npmjs.org/package/most-range) ###
+
+A factory of stream spanning a range of number.
+
 ## Developers ##
 
 ### Local development & testing ###
