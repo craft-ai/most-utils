@@ -5,7 +5,7 @@
     "most.js",
     "range"
   ],
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "src/index.js",
   "typings": "src/most-range.d.ts",
   "author": {
@@ -35,7 +35,7 @@
   "devDependencies": {
     "eslint": "^4.4.0",
     "mocha": "^3.5.0",
-    "most-buffer": "^0.0.6",
+    "most-buffer": "^0.0.7",
     "typescript": "^2.4.2"
   },
   "peerDependencies": {

@@ -5,7 +5,7 @@
     "most.js",
     "buffer"
   ],
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "src/index.js",
   "typings": "src/most-buffer.d.ts",
   "author": {

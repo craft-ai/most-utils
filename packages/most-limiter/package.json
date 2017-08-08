@@ -5,7 +5,7 @@
     "most.js",
     "ratelimiter"
   ],
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "src/index.js",
   "typings": "src/most-limiter.d.ts",
   "author": {
