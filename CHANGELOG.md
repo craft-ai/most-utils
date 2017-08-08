@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased](https://github.com/craft-ai/most-utils/compare/v0.0.6...HEAD) ##
+### Added ###
+- `most-buffer` - It is now possible to not provide the `count` argument to buffer the full stream.
 
 ## [0.0.6](https://github.com/craft-ai/most-utils/compare/v0.0.5...v0.0.6) - 2017-08-08 ##
 ### Changed ###
