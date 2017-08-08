@@ -9,8 +9,8 @@ class Buffer {
     // Buffering the new value
     this.buffer.push(value);
 
-    // If the buffer is full let's emit it
-    if (this.buffer.length === this.count) {
+    // If the buffer has a limit and is full, let's emit it
+    if (this.count && this.buffer.length === this.count) {
       this.sink.event(time, this.buffer);
       this.buffer = [];
     }
@@ -31,7 +31,7 @@ class Buffer {
   }
 }
 
-function buffer(count) {
+function buffer(count = undefined) {
   return stream => new stream.constructor({
     run: (sink, scheduler) => stream.source.run(new Buffer(count, sink), scheduler)
   });

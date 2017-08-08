@@ -29,9 +29,9 @@ stream:                 -a--b--c--------d--e--|
 stream.thru(buffer(3)): -------[a,b,c]--------[d,e]|
 ```
 
-- `count` is the size of the buffer
+- `count` is the size of the buffer, if undefined the full stream will be buffered before being emitted as an array.
 
-## Example ##
+## Examples ##
 
 ```js
 const most = require('most');
@@ -44,5 +44,14 @@ const buffer = require('most-buffer');
 most.iterate(x => x + 1, 0)
   .take(9) // 9 first numbers
   .thru(buffer(4)) // In buffer of 4 or less
+  .observe(x => console.log(x))
+```
+
+```js
+// Logs
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
+most.iterate(x => x + 1, 0)
+  .take(9) // 9 first numbers
+  .thru(buffer()) // Buffer the complete stream
   .observe(x => console.log(x))
 ```
