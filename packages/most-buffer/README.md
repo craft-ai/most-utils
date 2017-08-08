@@ -25,8 +25,8 @@ const buffer = require('most-buffer');
 `stream.thru(buffer(count)) -> Stream`
 
 ```
-source:               -a--b--c--------d--e--|
-most.thru(buffer(3)): -------[a,b,c]--------[d,e]|
+stream:                 -a--b--c--------d--e--|
+stream.thru(buffer(3)): -------[a,b,c]--------[d,e]|
 ```
 
 - `count` is the size of the buffer
