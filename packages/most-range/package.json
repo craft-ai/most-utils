@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/craft-ai/most-utils/issues"
   },
-  "homepage": "https://github.com/craft-ai/most-utils#readme",
+  "homepage": "https://github.com/craft-ai/most-utils/tree/master/packages/most-range#readme",
   "engines": {
     "node": ">= 6.9.1"
   },
