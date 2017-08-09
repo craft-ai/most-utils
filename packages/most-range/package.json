@@ -2,7 +2,13 @@
   "name": "most-range",
   "description": "Creating a most stream of numbers.",
   "keywords": [
+    "most-utils",
+    "mostjs",
     "most.js",
+    "reactive",
+    "event",
+    "async",
+    "streams",
     "range"
   ],
   "version": "0.0.7",

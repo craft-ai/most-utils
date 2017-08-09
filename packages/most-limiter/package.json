@@ -2,7 +2,13 @@
   "name": "most-limiter",
   "description": "Rate limiter for most js, delaying stream events according to a given rate.",
   "keywords": [
+    "most-utils",
+    "mostjs",
     "most.js",
+    "reactive",
+    "event",
+    "async",
+    "streams",
     "ratelimiter"
   ],
   "version": "0.0.7",

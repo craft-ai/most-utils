@@ -2,7 +2,13 @@
   "name": "most-buffer",
   "description": "Buffer for most js, collecting stream events in buffer of a given size.",
   "keywords": [
+    "most-utils",
+    "mostjs",
     "most.js",
+    "reactive",
+    "event",
+    "async",
+    "streams",
     "buffer"
   ],
   "version": "0.0.7",
