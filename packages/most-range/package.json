@@ -1,6 +1,6 @@
 {
   "name": "most-range",
-  "description": "Creating a most stream of numbers.",
+  "description": "Create ranges of integers as most js streams",
   "keywords": [
     "most-utils",
     "mostjs",

@@ -1,6 +1,6 @@
 {
   "name": "most-limiter",
-  "description": "Rate limiter for most js, delaying stream events according to a given rate.",
+  "description": "Lossless rate limiter for most js",
   "keywords": [
     "most-utils",
     "mostjs",

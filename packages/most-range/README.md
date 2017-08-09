@@ -1,8 +1,8 @@
 # `most-range` #
 
-[![Version](https://img.shields.io/npm/v/most-range.svg?style=flat-square)](https://npmjs.org/package/most-range)
+[![Version](https://img.shields.io/npm/v/most-range.svg?style=flat-square)](https://npmjs.org/package/most-range) [![License](https://img.shields.io/badge/license-BSD--3--Clause-42358A.svg?style=flat-square)](https://github.com/craft-ai/most-utils/blob/master/LICENSE)
 
-Creates a [most](https://github.com/cujojs/most) stream of numbers (positive and/or negative) progressing from start up, or dnw to, but not including, end.
+Creates a [most js](https://github.com/cujojs/most) stream of numbers (positive and/or negative) progressing from start up, or down, to, but not including, end.
 
 ## Installation ##
 

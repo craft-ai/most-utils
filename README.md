@@ -1,6 +1,6 @@
 # `most` utils #
 
-[![Build](https://img.shields.io/travis/craft-ai/most-utils/master.svg?style=flat-square)](https://travis-ci.org/craft-ai/most-utils) [![License](https://img.shields.io/badge/license-BSD--3--Clause-42358A.svg?style=flat-square)](LICENSE)
+[![Build](https://img.shields.io/travis/craft-ai/most-utils/master.svg?style=flat-square)](https://travis-ci.org/craft-ai/most-utils) [![License](https://img.shields.io/badge/license-BSD--3--Clause-42358A.svg?style=flat-square)](https://github.com/craft-ai/most-utils/blob/master/LICENSE)
 
 A collection of utilities for [most](https://github.com/cujojs/most).
 
@@ -8,16 +8,16 @@ A collection of utilities for [most](https://github.com/cujojs/most).
 
 ### [`most-buffer`](./packages/most-buffer) [![Version](https://img.shields.io/npm/v/most-buffer.svg?style=flat-square)](https://npmjs.org/package/most-buffer) ###
 
-A buffer, collecting stream events in buffer of a given size.
+Gather most js streams events into buffers.
 
 ### [`most-limiter`](./packages/most-limiter) [![Version](https://img.shields.io/npm/v/most-limiter.svg?style=flat-square)](https://npmjs.org/package/most-limiter) ###
 
-A rate limiter, delaying stream events according to a given rate.
+Lossless rate limiter for most js.
 
 
 ### [`most-range`](./packages/most-range) [![Version](https://img.shields.io/npm/v/most-range.svg?style=flat-square)](https://npmjs.org/package/most-range) ###
 
-A factory of stream spanning a range of number.
+Create ranges of integers as most js streams.
 
 ## Developers ##
 
