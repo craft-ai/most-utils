@@ -6,15 +6,13 @@ Creates a [most js](https://github.com/cujojs/most) stream of numbers (positive 
 
 ## Installation ##
 
-```console
-$ yarn add most-range
-```
-
-_or_
+Using npm:
 
 ```console
 $ npm install --save most-range
 ```
+
+In Node.js:
 
 ```js
 const range = require('most-range');

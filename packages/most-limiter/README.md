@@ -8,17 +8,13 @@ Unlike [`most.debounce`](https://github.com/cujojs/most/blob/master/docs/api.md#
 
 ## Installation ##
 
-```console
-$ yarn add most-limiter
-```
-
-_or_
+Using npm:
 
 ```console
 $ npm install --save most-limiter
 ```
 
-and then
+In Node.js:
 
 ```js
 const limiter = require('most-limiter');

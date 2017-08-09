@@ -6,15 +6,13 @@ Gather [most js](https://github.com/cujojs/most) streams events into buffers. Bu
 
 ## Installation ##
 
-```console
-$ yarn add most-buffer
-```
-
-_or_
+Using npm:
 
 ```console
 $ npm install --save most-buffer
 ```
+
+In Node.js:
 
 ```js
 const buffer = require('most-buffer');
