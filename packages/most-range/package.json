@@ -1,8 +1,14 @@
 {
   "name": "most-range",
-  "description": "Creating a most stream of numbers.",
+  "description": "Create ranges of integers as most js streams",
   "keywords": [
+    "most-utils",
+    "mostjs",
     "most.js",
+    "reactive",
+    "event",
+    "async",
+    "streams",
     "range"
   ],
   "version": "0.0.7",
@@ -20,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/craft-ai/most-utils/issues"
   },
-  "homepage": "https://github.com/craft-ai/most-utils#readme",
+  "homepage": "https://github.com/craft-ai/most-utils/tree/master/packages/most-range#readme",
   "engines": {
     "node": ">= 6.9.1"
   },

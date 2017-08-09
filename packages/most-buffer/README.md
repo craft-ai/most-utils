@@ -1,20 +1,18 @@
 # `most-buffer` #
 
-[![Version](https://img.shields.io/npm/v/most-buffer.svg?style=flat-square)](https://npmjs.org/package/most-buffer)
+[![Version](https://img.shields.io/npm/v/most-buffer.svg?style=flat-square)](https://npmjs.org/package/most-buffer) [![License](https://img.shields.io/badge/license-BSD--3--Clause-42358A.svg?style=flat-square)](https://github.com/craft-ai/most-utils/blob/master/LICENSE)
 
-Buffer for [most](https://github.com/cujojs/most).
+Gather [most js](https://github.com/cujojs/most) streams events into buffers. Buffers are emitted according to a given event count or gather the complete stream if no count is given.
 
 ## Installation ##
 
-```console
-$ yarn add most-buffer
-```
-
-_or_
+Using npm:
 
 ```console
 $ npm install --save most-buffer
 ```
+
+In Node.js:
 
 ```js
 const buffer = require('most-buffer');

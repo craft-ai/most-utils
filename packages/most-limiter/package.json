@@ -1,8 +1,14 @@
 {
   "name": "most-limiter",
-  "description": "Rate limiter for most js, delaying stream events according to a given rate.",
+  "description": "Lossless rate limiter for most js",
   "keywords": [
+    "most-utils",
+    "mostjs",
     "most.js",
+    "reactive",
+    "event",
+    "async",
+    "streams",
     "ratelimiter"
   ],
   "version": "0.0.7",
@@ -20,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/craft-ai/most-utils/issues"
   },
-  "homepage": "https://github.com/craft-ai/most-utils#readme",
+  "homepage": "https://github.com/craft-ai/most-utils/tree/master/packages/most-limiter#readme",
   "engines": {
     "node": ">= 6.9.1"
   },

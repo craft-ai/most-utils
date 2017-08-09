@@ -1,8 +1,14 @@
 {
   "name": "most-buffer",
-  "description": "Buffer for most js, collecting stream events in buffer of a given size.",
+  "description": "Gather most js streams events into buffers",
   "keywords": [
+    "most-utils",
+    "mostjs",
     "most.js",
+    "reactive",
+    "event",
+    "async",
+    "streams",
     "buffer"
   ],
   "version": "0.0.7",
@@ -20,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/craft-ai/most-utils/issues"
   },
-  "homepage": "https://github.com/craft-ai/most-utils#readme",
+  "homepage": "https://github.com/craft-ai/most-utils/tree/master/packages/most-buffer#readme",
   "engines": {
     "node": ">= 6.9.1"
   },
