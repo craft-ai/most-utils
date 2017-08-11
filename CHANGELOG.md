@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased](https://github.com/craft-ai/most-utils/compare/v0.0.8...HEAD) ##
+### Added ###
+- `most-nth` - Initial implementation for individual events retrieval.
 
 ## [0.0.8](https://github.com/craft-ai/most-utils/compare/v0.0.7...v0.0.8) - 2017-08-11 ##
 ### Changed ###

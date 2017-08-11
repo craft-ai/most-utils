@@ -14,6 +14,9 @@ Gather most js streams events into buffers.
 
 Lossless rate limiter for most js.
 
+### [`most-nth`](./packages/most-nth) [![Version](https://img.shields.io/npm/v/most-nth.svg?style=flat-square)](https://npmjs.org/package/most-nth) ###
+
+Retrieve the nth event in a stream as a Promise.
 
 ### [`most-range`](./packages/most-range) [![Version](https://img.shields.io/npm/v/most-range.svg?style=flat-square)](https://npmjs.org/package/most-range) ###
 
