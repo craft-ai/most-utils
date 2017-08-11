@@ -32,7 +32,7 @@ class Buffer {
 }
 
 function buffer(count = undefined) {
-  return stream => new stream.constructor({
+  return (stream) => new stream.constructor({
     run: (sink, scheduler) => stream.source.run(new Buffer(count, sink), scheduler)
   });
 }

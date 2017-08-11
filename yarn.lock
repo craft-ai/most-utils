@@ -616,9 +616,15 @@ escape-string-regexp@1.0.5, escape-string-regexp@^1.0.2, escape-string-regexp@^1
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
-eslint-config-craft-ai@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-craft-ai/-/eslint-config-craft-ai-2.2.3.tgz#8ebc85ff3f8e277ca21974780777eda31ceff0ea"
+eslint-config-craft-ai@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/eslint-config-craft-ai/-/eslint-config-craft-ai-2.2.5.tgz#8a0ff284fc2199a309394816d0deb3a0ec62f017"
+  dependencies:
+    eslint-plugin-wyze "3.3.1"
+
+eslint-plugin-wyze@3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-wyze/-/eslint-plugin-wyze-3.3.1.tgz#86158f577044e839b0b90f538cffb11ce82fce53"
 
 eslint-scope@^3.7.1:
   version "3.7.1"
