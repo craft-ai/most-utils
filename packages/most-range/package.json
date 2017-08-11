@@ -11,7 +11,7 @@
     "streams",
     "range"
   ],
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "src/index.js",
   "typings": "src/most-range.d.ts",
   "author": {
@@ -41,7 +41,7 @@
   "devDependencies": {
     "eslint": "^4.4.0",
     "mocha": "^3.5.0",
-    "most-buffer": "^0.0.8",
+    "most-buffer": "^0.0.9",
     "typescript": "^2.4.2"
   },
   "peerDependencies": {
