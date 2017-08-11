@@ -44,7 +44,7 @@ stream.thru(first):   a
 
 ```
 stream:              -a--b--c--d--|
-stream.thru(last):                a
+stream.thru(last):                d
 ```
 
 ## Examples ##
