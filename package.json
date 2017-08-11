@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/node": "^8.0.19",
     "chai": "^4.1.1",
-    "eslint-config-craft-ai": "^2.2.3",
+    "eslint-config-craft-ai": "^2.2.5",
     "lerna": "^2.0.0",
     "most": "^1.5.1"
   },

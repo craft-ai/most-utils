@@ -8,7 +8,7 @@ describe('range', function() {
     return range(0, 5)
       .tap(() => count += 1)
       .thru(buffer())
-      .tap(array => expect(array).to.deep.equal([0, 1, 2, 3, 4]))
+      .tap((array) => expect(array).to.deep.equal([0, 1, 2, 3, 4]))
       .drain()
       .then(() => expect(count).to.be.equal(5));
   });
@@ -18,7 +18,7 @@ describe('range', function() {
     return range(0, -5)
       .tap(() => count += 1)
       .thru(buffer())
-      .tap(array => expect(array).to.deep.equal([0, -1, -2, -3, -4]))
+      .tap((array) => expect(array).to.deep.equal([0, -1, -2, -3, -4]))
       .drain()
       .then(() => expect(count).to.be.equal(5));
   });
@@ -28,7 +28,7 @@ describe('range', function() {
     return range(2, -5)
       .tap(() => count += 1)
       .thru(buffer())
-      .tap(array => expect(array).to.deep.equal([2, 1, 0, -1, -2, -3, -4]))
+      .tap((array) => expect(array).to.deep.equal([2, 1, 0, -1, -2, -3, -4]))
       .drain()
       .then(() => expect(count).to.be.equal(7));
   });
@@ -38,7 +38,7 @@ describe('range', function() {
     return range(1, 3, 0.5)
       .tap(() => count += 1)
       .thru(buffer())
-      .tap(array => expect(array).to.deep.equal([1, 1.5, 2, 2.5]))
+      .tap((array) => expect(array).to.deep.equal([1, 1.5, 2, 2.5]))
       .drain()
       .then(() => expect(count).to.be.equal(4));
   });
@@ -48,7 +48,7 @@ describe('range', function() {
     return range(0, 0)
       .tap(() => count += 1)
       .thru(buffer())
-      .tap(array => expect(array).to.deep.equal([]))
+      .tap((array) => expect(array).to.deep.equal([]))
       .drain()
       .then(() => expect(count).to.be.equal(0));
   });
@@ -59,7 +59,7 @@ describe('range', function() {
       .take(5)
       .tap(() => count += 1)
       .thru(buffer())
-      .tap(array => expect(array).to.deep.equal([2, 2, 2, 2, 2]))
+      .tap((array) => expect(array).to.deep.equal([2, 2, 2, 2, 2]))
       .drain()
       .then(() => expect(count).to.be.equal(5));
   });

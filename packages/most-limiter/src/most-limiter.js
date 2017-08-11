@@ -69,7 +69,7 @@ class Limiter {
 }
 
 function limiter(interval, capacity = MAX_BUFFER_SIZE) {
-  return stream => new stream.constructor({
+  return (stream) => new stream.constructor({
     run: (sink, scheduler) => stream.source.run(new Limiter(interval, capacity, sink), scheduler)
   });
 }
