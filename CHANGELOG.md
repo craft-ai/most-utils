@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased](https://github.com/craft-ai/most-utils/compare/v0.0.9...HEAD) ##
+## Changed ##
+- Updated `most js` peer dependency to 1.7 to include a [fix to the `thru` function signature](https://github.com/cujojs/most/releases/tag/1.6.0); it is needed for the proper usage of `most-nth` with TypeScript.
 
 ## [0.0.9](https://github.com/craft-ai/most-utils/compare/v0.0.8...v0.0.9) - 2017-08-11 ##
 ### Added ###
