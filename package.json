@@ -29,7 +29,7 @@
     "chai": "^4.1.1",
     "eslint-config-craft-ai": "^2.2.5",
     "lerna": "^2.0.0",
-    "most": "^1.5.1"
+    "most": "^1.7"
   },
   "workspaces": [
     "packages/*"
