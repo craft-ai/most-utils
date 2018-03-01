@@ -43,6 +43,16 @@ describe('range', function() {
       .then(() => expect(count).to.be.equal(4));
   });
 
+  it('can create a stream of integer from 1 to 3.5 with steps of 2', function() {
+    let count = 0;
+    return range(1, 3.5, 2)
+      .tap(() => count += 1)
+      .thru(buffer())
+      .tap((array) => expect(array).to.deep.equal([1, 3]))
+      .drain()
+      .then(() => expect(count).to.be.equal(2));
+  });
+
   it('create an empty stream when called with 0 and 0', function() {
     let count = 0;
     return range(0, 0)
