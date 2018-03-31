@@ -35,8 +35,10 @@ class BufferSink {
       return;
     }
 
-    // Sending what's left in the buffer
-    this.sink.event(time, this.length < this.count ? this.buffer.slice(0, this.length) : this.buffer);
+    if (this.length) {
+      // Sending what's left in the buffer
+      this.sink.event(time, this.length < this.count ? this.buffer.slice(0, this.length) : this.buffer);
+    }
 
     // And ending everything
     this.active = false;
