@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - '6.9'
+  - '8.9'
 cache: yarn
 script:
   - yarn run lint
@@ -14,6 +15,7 @@ deploy:
   script: scripts/npm_publish.sh $NPM_TOKEN
   on:
     repo: craft-ai/most-utils
+    node: '6.9'
     tags: true
 env:
   global:
