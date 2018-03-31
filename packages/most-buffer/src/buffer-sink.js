@@ -3,7 +3,8 @@ class BufferSink {
     this.active = true;
     this.sink = sink;
     this.count = count;
-    this.buffer = [];
+    this.buffer = count === undefined ? [] : new Array(count);
+    this.length = 0;
   }
 
   event(time, value) {
@@ -12,12 +13,15 @@ class BufferSink {
     }
 
     // Buffering the new value
-    this.buffer.push(value);
+    this.buffer[this.length++] = value;
 
     // If the buffer has a limit and is full, let's emit it
-    if (this.count && this.buffer.length === this.count) {
-      this.sink.event(time, this.buffer);
-      this.buffer = [];
+    if (this.length === this.count) {
+      const value = this.buffer;
+
+      this.buffer = new Array(this.count);
+      this.length = 0;
+      this.sink.event(time, value);
     }
   }
 
@@ -32,8 +36,7 @@ class BufferSink {
     }
 
     // Sending what's left in the buffer
-    this.sink.event(time, this.buffer);
-    this.buffer = [];
+    this.sink.event(time, this.length < this.count ? this.buffer.slice(0, this.length) : this.buffer);
 
     // And ending everything
     this.active = false;
