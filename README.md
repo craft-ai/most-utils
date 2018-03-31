@@ -1,6 +1,8 @@
 # `most` utils #
 
-[![Build](https://img.shields.io/travis/craft-ai/most-utils/master.svg?style=flat-square)](https://travis-ci.org/craft-ai/most-utils) [![License](https://img.shields.io/badge/license-BSD--3--Clause-42358A.svg?style=flat-square)](https://github.com/craft-ai/most-utils/blob/master/LICENSE)
+[![Build](https://img.shields.io/travis/craft-ai/most-utils/master.svg?style=flat-square)](https://travis-ci.org/craft-ai/most-utils)
+[![Coverage Status](https://img.shields.io/coveralls/github/craft-ai/most-utils/badge.svg?style=flat-square)](https://coveralls.io/github/craft-ai/most-utils)
+[![License](https://img.shields.io/badge/license-BSD--3--Clause-42358A.svg?style=flat-square)](https://github.com/craft-ai/most-utils/blob/master/LICENSE)
 
 A collection of utilities for [most](https://github.com/cujojs/most).
 
@@ -61,7 +63,7 @@ These packages requires [Node v6.9](https://nodejs.org/en/download/) or later an
   ```
 
   `./scripts/update_version.sh minor` and `./scripts/update_version.sh major` are
-  also available - see [semver](http://semver.org) for a guideline on when to
+  also available - see [semver](https://semver.org/) for a guideline on when to
   use which.
 
   > This will create a git commit and a git tag.

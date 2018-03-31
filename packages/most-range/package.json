@@ -1,6 +1,6 @@
 {
   "name": "most-range",
-  "description": "Create ranges of integers as most js streams",
+  "description": "Create ranges of integers as most.js streams",
   "keywords": [
     "most-utils",
     "mostjs",
@@ -13,19 +13,14 @@
   ],
   "version": "0.0.10",
   "main": "src/index.js",
-  "typings": "src/most-range.d.ts",
+  "types": "src/index.d.ts",
   "author": {
     "name": "craft ai",
     "email": "contact@craft.ai",
     "url": "http://craft.ai/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/craft-ai/most-utils.git"
-  },
-  "bugs": {
-    "url": "https://github.com/craft-ai/most-utils/issues"
-  },
+  "repository": "github:craft-ai/most-utils",
+  "bugs": "https://github.com/craft-ai/most-utils/issues",
   "homepage": "https://github.com/craft-ai/most-utils/tree/master/packages/most-range#readme",
   "engines": {
     "node": ">= 6.9.1"
@@ -33,16 +28,15 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "test": "mocha",
-    "lint": "eslint . && tsc src/most-range.d.ts"
+    "lint": "tsc src/index.d.ts && eslint .",
+    "test:coverage": "nyc yarn run test",
+    "lint:fix": "yarn run lint --fix"
   },
   "dependencies": {
     "lodash.tonumber": "4.0.3"
   },
   "devDependencies": {
-    "eslint": "^4.4.0",
-    "mocha": "^3.5.0",
-    "most-buffer": "^0.0.10",
-    "typescript": "^2.4.2"
+    "most-buffer": "^0.0.10"
   },
   "peerDependencies": {
     "most": "^1.5.1"

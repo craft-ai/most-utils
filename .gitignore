@@ -1,5 +1,7 @@
-node_modules
 *.log
+node_modules/
+.nyc_output/
+/packages/*/coverage/
 
-# Packaging scripts artifacts
+# Used by the script that update the changelog
 *.bak
