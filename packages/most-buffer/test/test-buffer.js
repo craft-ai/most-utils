@@ -28,6 +28,12 @@ describe('buffer', function() {
       .reduce((count) => count + 1, 0)
       .then((count) => expect(count).to.equal(1));
   });
+  it('keep an empty stream empty', function() {
+    return most.empty()
+      .thru(buffer())
+      .reduce((count) => count + 1, 0)
+      .then((count) => expect(count).to.equal(0));
+  });
   it('skip remaining events after the end of a stream', function() {
     const time = 123;
     const expected = {};
