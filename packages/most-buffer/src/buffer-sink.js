@@ -1,4 +1,4 @@
-class Buffer {
+class BufferSink {
   constructor(count, sink) {
     this.sink = sink;
     this.count = count;
@@ -21,20 +21,14 @@ class Buffer {
     this.sink.error(time, error);
   }
 
-  end(time) {
+  end(time, value) {
     // Sending what's left in the buffer
     this.sink.event(time, this.buffer);
     this.buffer = [];
 
     // And ending everything
-    this.sink.end(time);
+    this.sink.end(time, value);
   }
 }
 
-function buffer(count = undefined) {
-  return (stream) => new stream.constructor({
-    run: (sink, scheduler) => stream.source.run(new Buffer(count, sink), scheduler)
-  });
-}
-
-module.exports = buffer;
+module.exports = BufferSink;
