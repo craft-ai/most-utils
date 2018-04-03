@@ -11,7 +11,7 @@
     "streams",
     "range"
   ],
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "author": {
@@ -36,7 +36,7 @@
     "lodash.tonumber": "4.0.3"
   },
   "devDependencies": {
-    "most-buffer": "^0.0.10"
+    "most-buffer": "^0.0.11"
   },
   "peerDependencies": {
     "most": "^1.5.1"
