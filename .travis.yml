@@ -1,18 +1,21 @@
 language: node_js
 node_js:
-- '6.9'
-before_install:
-- curl -o- -L https://yarnpkg.com/install.sh | bash
-- export PATH="$HOME/.yarn/bin:$PATH"
-script: yarn run lint && yarn run test
+  - '6.9'
+  - '8.9'
+cache: yarn
+script:
+  - yarn run lint
+  - yarn run test:coverage
+after_success: yarn run test:report
 notifications:
   slack: craft-ai:ZNnQErHJhw40oKmphy3fNGza
-  email:
-  - ops@craft.ai
+  email: ops@craft.ai
 deploy:
   provider: script
   script: scripts/npm_publish.sh $NPM_TOKEN
   on:
+    repo: craft-ai/most-utils
+    node: '6.9'
     tags: true
 env:
   global:

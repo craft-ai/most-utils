@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/most-limiter.svg?style=flat-square)](https://npmjs.org/package/most-limiter) [![License](https://img.shields.io/badge/license-BSD--3--Clause-42358A.svg?style=flat-square)](https://github.com/craft-ai/most-utils/blob/master/LICENSE)
 
-Lossless rate limiter for [most js](https://github.com/cujojs/most).
+Lossless rate limiter for [most.js](https://github.com/cujojs/most).
 
 Unlike [`most.debounce`](https://github.com/cujojs/most/blob/master/docs/api.md#debounce) or [`most.throttle`](https://github.com/cujojs/most/blob/master/docs/api.md#throttle), with `most-limiter`, each event gets through, unless the internal buffer overrides.
 

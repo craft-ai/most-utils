@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/most-nth.svg?style=flat-square)](https://npmjs.org/package/most-nth) [![License](https://img.shields.io/badge/license-BSD--3--Clause-42358A.svg?style=flat-square)](https://github.com/craft-ai/most-utils/blob/master/LICENSE)
 
-Gets the event at ordinal index `n` of a [most js](https://github.com/cujojs/most) stream as a Promise. If `n` is negative (and the stream finishes), the nth element from the end is returned.
+Retrieves the event at ordinal index `n` from a [most.js](https://github.com/cujojs/most) stream as a `Promise`. If `n` is negative (and the stream finishes), the nth element from the end is returned.
 
 ## Installation ##
 
