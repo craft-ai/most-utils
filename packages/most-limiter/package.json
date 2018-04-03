@@ -34,5 +34,8 @@
   },
   "peerDependencies": {
     "most": "^1.7"
-  }
+  },
+  "files": [
+    "src"
+  ]
 }

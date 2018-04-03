@@ -40,5 +40,8 @@
   },
   "peerDependencies": {
     "most": "^1.5.1"
-  }
+  },
+  "files": [
+    "src"
+  ]
 }
