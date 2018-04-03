@@ -6,10 +6,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased](https://github.com/craft-ai/most-utils/compare/v0.0.10...HEAD) ##
+### Added ###
+- Code coverage on every packages.
+- Unit tests on a Node.js version 8 environment.
 ## Fixed ##
 - `most-buffer` - Empty arrays were emitted in a stream with a deffered sink.
 - `most-buffer` - An empty array was emitted with an empty stream.
 ## Changed ##
+- Only package source files when publishing to npm.
+- Updated the packages description.
 - `most-buffer` - Use fixed size arrays to buffer the events.
 
 ## [0.0.10](https://github.com/craft-ai/most-utils/compare/v0.0.9...v0.0.10) - 2017-09-26 ##
