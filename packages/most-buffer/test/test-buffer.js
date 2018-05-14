@@ -2,6 +2,7 @@ const { expect } = require('chai');
 const buffer = require('../src');
 const BufferSink = require('../src/buffer-sink');
 const most = require('most');
+const { create } = require('@most/create');
 
 describe('buffer', function() {
   it('can group stream events 10 by 10', function() {
@@ -53,5 +54,26 @@ describe('buffer', function() {
     sink.end(time, expected);
     sink.end(time + 1);
     sink.event(time + 2);
+  });
+  it('should flush after the given flush period even if the buffer is not full', function(done) {
+    const stream$ = create((add, end) => {
+      setTimeout(() => add('data'), 10);
+      setTimeout(() => add('data'), 20);
+      setTimeout(() => add('data'), 50);
+      setTimeout(() => {
+        add('data');
+        end();
+      }, 100);
+    });
+
+    return stream$
+      .take(10)
+      .thru(buffer(5, 700))
+      .subscribe({
+        next: (data) => {
+          expect(data.length < 5).to.be.true;
+        },
+        complete: () => done()
+      });
   });
 });

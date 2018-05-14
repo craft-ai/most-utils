@@ -1,8 +1,8 @@
 const BufferSink = require('./buffer-sink.js');
 
-function buffer(count = undefined) {
+function buffer(count = undefined, flushAfter) {
   return (stream) => new stream.constructor({
-    run: (sink, scheduler) => stream.source.run(new BufferSink(count, sink), scheduler)
+    run: (sink, scheduler) => stream.source.run(new BufferSink(count, sink, flushAfter), scheduler)
   });
 }
 
