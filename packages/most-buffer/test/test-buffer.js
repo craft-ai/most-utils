@@ -71,9 +71,9 @@ describe('buffer', function() {
       .thru(buffer(5, 700))
       .subscribe({
         next: (data) => {
-          expect(data.length < 5).to.be.true
+          expect(data.length < 5).to.be.true;
         },
         complete: () => done()
-      })
+      });
   });
 });
