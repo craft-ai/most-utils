@@ -16,17 +16,16 @@ class BufferSink {
     // Buffering the new value
     this.buffer[this.length++] = value;
 
-    if(this.flushAfter) {
+    if (this.flushAfter) {
       // make sure we flush this if some time has passed and count is not reached
       this.flushTimeout && clearTimeout(this.flushTimeout);
 
       setTimeout(() => {
-        if(this.length > 0) {
-          console.log('setTimeout')
+        if (this.length > 0) {
           this.sink.event(time, value);
           this.length = 0;
         }
-      }, this.flushAfter)
+      }, this.flushAfter);
     }
 
     // If the buffer has a limit and is full, let's emit it
