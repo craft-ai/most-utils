@@ -36,5 +36,5 @@
   },
   "workspaces": [
     "packages/*"
-  ],
+  ]
 }
